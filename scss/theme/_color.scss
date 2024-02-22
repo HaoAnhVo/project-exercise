@@ -1,0 +1,7 @@
+@use "../abstracts";
+
+html {
+    @include abstracts.screen(md) {
+        --space-bg-color: #000000;
+    }
+}

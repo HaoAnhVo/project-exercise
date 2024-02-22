@@ -1,0 +1,64 @@
+@use "../abstracts";
+
+.footer {
+    padding: 50px 0;
+    color: #ffffffcc;
+
+    &__row {
+        display: grid;
+        grid-template-columns: 2.5fr 1fr 2fr 1fr 2fr;
+        gap: 60px;
+
+        @include abstracts.screen(lg) {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    &__desc {
+        margin-top: 76px;
+        max-width: 211px;
+        line-height: 26px;
+
+        @include abstracts.screen(lg) {
+            margin-top: 30px;
+        }
+    }
+
+    &__download {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 18px;
+        width: 122px;
+        height: 36px;
+        object-fit: cover;
+        gap: 18px;
+    }
+
+    &__heading {
+        font-family: "Plus Jakarta Sans", serif;
+        font-weight: 500;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    &__list {
+        margin-top: 24px;
+    }
+
+    &__link,
+    &__text {
+        padding: 8px 0;
+        line-height: 26px;
+    }
+
+    &__link {
+        display: inline-block;
+
+        &:hover {
+            color: #fb8f2c;
+        }
+    }
+}

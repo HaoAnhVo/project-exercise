@@ -1,0 +1,28 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+
+    height: 56px;
+    padding: 0 118px;
+
+    background: #111114;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+    user-select: none;
+
+    &--small {
+        width: 145px;
+        height: 42px;
+        background: #fb8f2ccc;
+
+        font-weight: 600;
+        color: #fff;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}

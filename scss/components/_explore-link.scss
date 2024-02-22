@@ -1,0 +1,22 @@
+@use "../abstracts";
+
+.explore__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 60px;
+    color: #fb8f2c;
+
+    &-icon {
+        transition: translate 0.3s;
+    }
+
+    &:hover &-icon {
+        translate: 5px;
+    }
+
+    @include abstracts.screen(lg) {
+        margin-top: 40px;
+    }
+}

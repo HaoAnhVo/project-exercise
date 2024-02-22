@@ -1,0 +1,88 @@
+@use "../abstracts";
+
+.reserve {
+    margin-top: 90px;
+
+    @include abstracts.screen(lg) {
+        margin-top: 50px;
+    }
+
+    &__right {
+        align-items: flex-start;
+        padding-left: 40px;
+        min-height: 394px;
+
+        @include abstracts.screen(sm) {
+            padding-left: 20px;
+        }
+
+        &-title,
+        &-number {
+            font-family: "Libre Bodoni", serif;
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 50px;
+            text-align: left;
+
+            @include abstracts.screen(sm) {
+                font-size: 3.4rem;
+            }
+        }
+
+        &-info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 100px;
+            margin-top: 40px;
+            color: #111114;
+
+            @include abstracts.screen(sm) {
+                gap: 70px;
+            }
+        }
+
+        &-text {
+            font-family: "Libre Bodoni", serif;
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 34px;
+        }
+
+        &-row {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        &-calendar {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        &-month {
+            font-size: 1.4rem;
+        }
+
+        &-icon {
+            width: 12px;
+            height: 7px;
+        }
+    }
+
+    &__left {
+        min-height: 394px;
+        background: url(../img/reserve/cover.png) no-repeat center/cover;
+    }
+
+    &__btn {
+        margin-top: 74px;
+
+        @include abstracts.screen(sm) {
+            padding: 0px 90px;
+        }
+    }
+}

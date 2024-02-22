@@ -1,0 +1,65 @@
+@use "../abstracts";
+
+.chef {
+    &__inner {
+        margin-top: 150px;
+
+        @include abstracts.screen(lg) {
+            margin-top: 70px;
+        }
+    }
+
+    &__desc {
+        max-width: 768px;
+    }
+
+    &__item {
+        margin-top: 40px;
+    }
+
+    &__img-wrap {
+        position: relative;
+        padding-top: 120%;
+
+        @include abstracts.screen(md) {
+            padding-top: 70%;
+        }
+    }
+
+    &__thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 1px solid #fff;
+    }
+
+    &__row {
+        margin-top: 30px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    &__sub-title {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 40px;
+        white-space: nowrap;
+
+        @include abstracts.screen(md) {
+            font-size: 2.6rem;
+        }
+    }
+
+    &__sub-desc {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 26px;
+
+        @include abstracts.screen(md) {
+            font-size: 1.6rem;
+        }
+    }
+}

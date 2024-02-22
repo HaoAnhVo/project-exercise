@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>BFood Restaurant</title>
+        <title>WowWraps Restaurant</title>
 
         <!-- Favicon -->
         <link
@@ -36,9 +36,1546 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&family=Playball&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
     </head>
-    <body></body>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+        <main class="home">
+            <section class="home__container">
+                <!-- Introduction -->
+                <div class="container introduction">
+                    <div class="introduction__inner">
+                        <div class="row row-cols-2">
+                            <div class="col-7 col-lg-12">
+                                <div class="introduction__content">
+                                    <p class="introduction__welcome">
+                                        Hi, new friend!
+                                    </p>
+                                    <h1 class="introduction__title">
+                                        We do not cook, we create your emotions!
+                                    </h1>
+                                    <p class="introduction__desc">
+                                        There's evidence that cooking, like
+                                        other creative practices, can boost
+                                        well-being, self-esteem, and other
+                                        measures of mental health.
+                                    </p>
+                                    <a href="#!" class="introduction__link">
+                                        Our menu
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-5 col-lg-12">
+                                <div class="introduction__image">
+                                    <img
+                                        src="./assets/img/introduction/introduction.png"
+                                        alt=""
+                                        class="introduction__img"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sub introduction -->
+                <div class="sub__introduction">
+                    <div class="sub__introduction-row">
+                        <div class="sub__introduction-item">
+                            <span class="sub__introduction-number">06</span>
+                            <p class="sub__introduction-type">
+                                Number Restaurant
+                            </p>
+                        </div>
+
+                        <div class="sub__introduction-item">
+                            <span class="sub__introduction-number">68</span>
+                            <p class="sub__introduction-type">
+                                New Food Menu Dishes
+                            </p>
+                        </div>
+                        <div class="sub__introduction-item">
+                            <span class="sub__introduction-number">36</span>
+                            <p class="sub__introduction-type">
+                                Year Of Experience
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container home__container">
+                <!-- Popular Food -->
+                <div class="food">
+                    <div class="food__inner">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <h2 class="food__title">Most Popular Food</h2>
+                                <p class="food__desc">
+                                    A list of most popular Bangladeshi food
+                                    including mains, drinks, and deserts you
+                                    must try while in Bangladesh, for an
+                                    authentic experience. Check now!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row row-cols-3 row-cols-md-1">
+                            <div class="col">
+                                <!-- Food item 1 -->
+                                <article class="food__item">
+                                    <div class="food__img-wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/food/food-1.png"
+                                                alt=""
+                                                class="food__thumb"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="food__row">
+                                        <h3 class="food__sub-title">
+                                            <a href="#!">Schezwan Noodles</a>
+                                        </h3>
+                                        <span class="food__price">$49</span>
+                                    </div>
+                                    <p class="food__sub-desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+                                    <div class="food__row food__order">
+                                        <a href="#!">Order Now</a>
+                                        <div class="food__stars">
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <!-- Food item 2 -->
+                                <article class="food__item">
+                                    <div class="food__img-wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/food/food-2.png"
+                                                alt=""
+                                                class="food__thumb"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="food__row">
+                                        <h3 class="food__sub-title">
+                                            <a href="#!">Schezwan Noodles</a>
+                                        </h3>
+                                        <span class="food__price">$49</span>
+                                    </div>
+                                    <p class="food__sub-desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+                                    <div class="food__row food__order">
+                                        <a href="#!">Order Now</a>
+                                        <div class="food__stars">
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star-nofill.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <!-- Food item 3 -->
+                                <article class="food__item">
+                                    <div class="food__img-wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/food/food-3.png"
+                                                alt=""
+                                                class="food__thumb"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="food__row">
+                                        <h3 class="food__sub-title">
+                                            <a href="#!">Schezwan Noodles</a>
+                                        </h3>
+                                        <span class="food__price">$49</span>
+                                    </div>
+                                    <p class="food__sub-desc">
+                                        Fresh toasted sourdough bread with olive
+                                        oil and pomegranate.
+                                    </p>
+                                    <div class="food__row food__order">
+                                        <a href="#!">Order Now</a>
+                                        <div class="food__stars">
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star-nofill.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <a href="#!" class="explore__link">
+                            Explore All Food
+                            <img
+                                src="./assets/icons/arrow-right.svg"
+                                alt=""
+                                class="explore__link-icon"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Opening time -->
+            <section class="container home__container">
+                <div class="about">
+                    <div class="row row-cols-2 row-cols-md-1 gx-0">
+                        <div class="col">
+                            <article class="about__left">
+                                <h3 class="about__left-title">Find us gere</h3>
+                                <div class="about__left-content">
+                                    <p>Avenue Marina 34568 NY (U.S)</p>
+                                    <p>+0123 456 7890</p>
+                                    <p>hellouihut@gmail.com</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="about__right">
+                                <h3 class="about__right-title">
+                                    Openning Times
+                                </h3>
+                                <div class="about__right-content">
+                                    <div class="about__right-date">
+                                        <p class="about__right-text">Mon</p>
+                                        <p class="about__right-text">Wed</p>
+                                        <p class="about__right-text">Thu</p>
+                                        <p class="about__right-text">Fr</p>
+                                        <p class="about__right-text">Sat/Sun</p>
+                                    </div>
+                                    <div class="about__right-time">
+                                        <p class="about__right-text">
+                                            17:00 to 23:00
+                                        </p>
+                                        <p class="about__right-text">
+                                            19:00 to 24:00
+                                        </p>
+                                        <p class="about__right-text">
+                                            14:00 to 18:00
+                                        </p>
+                                        <p class="about__right-text">
+                                            16:00 to 24:00
+                                        </p>
+                                        <p class="about__right-text">
+                                            20:00 to 4:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu -->
+            <section class="container home__container">
+                <div class="menu">
+                    <div>
+                        <p class="food__introduction">Our menu</p>
+                        <h2 class="food__title">
+                            Choose & Taste What You Like
+                        </h2>
+                        <p class="food__desc">
+                            A list of top Bangladeshi food including mains,
+                            drinks, and deserts you must try while in
+                            Bangladesh, for an authentic experience. Check now!
+                        </p>
+                    </div>
+
+                    <div class="menu__bottom">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <div class="menu__choice">
+                                    <div
+                                        class="menu__choice-group"
+                                        for="menu-choice"
+                                        class="menu__choice-label"
+                                    >
+                                        <label
+                                            for="all-choice"
+                                            class="menu__choice-food menu__choice-all menu__choice--current"
+                                        >
+                                            All
+                                        </label>
+                                        <label
+                                            for="appetizer-choice"
+                                            class="menu__choice-food menu__choice-label--appetizer"
+                                        >
+                                            Appetizer
+                                        </label>
+                                        <label
+                                            for="soup-choice"
+                                            class="menu__choice-food menu__choice-soup"
+                                        >
+                                            Soup
+                                        </label>
+                                        <label
+                                            for="dessert-choice"
+                                            class="menu__choice-food menu__choice-dessert"
+                                        >
+                                            Dessert
+                                        </label>
+                                        <label
+                                            for="drink-choice"
+                                            class="menu__choice-food menu__choice-drink"
+                                        >
+                                            Drinks
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separate menu__separate"></div>
+
+                        <div class="menu__group">
+                            <input
+                                type="radio"
+                                name="menu-choice"
+                                class="menu__choice-input menu__choice-all"
+                                id="all-choice"
+                                checked
+                            />
+                            <input
+                                type="radio"
+                                name="menu-choice"
+                                class="menu__choice-input menu__choice-appetizer"
+                                id="appetizer-choice"
+                            />
+                            <input
+                                type="radio"
+                                name="menu-choice"
+                                class="menu__choice-input menu__choice-soup"
+                                id="soup-choice"
+                            />
+                            <input
+                                type="radio"
+                                name="menu-choice"
+                                class="menu__choice-input menu__choice-dessert"
+                                id="dessert-choice"
+                            />
+                            <input
+                                type="radio"
+                                name="menu-choice"
+                                class="menu__choice-input menu__choice-drink"
+                                id="drink-choice"
+                            />
+                            <!-- Menu list 1 -->
+                            <article class="menu__list">
+                                <div class="row row-cols-2 row-cols-lg-1">
+                                    <div class="col">
+                                        <div class="menu__left">
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-1.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Chawli Beans and Mint Burger
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $11
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-2.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    American Chopsuey, Jain
+                                                    Recipe
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $16
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-3.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Paneer Nuggets, Quick Paneer
+                                                    Deep-fried
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $15
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-4.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Stir Fried Mixed Vegetables
+                                                    in Butter
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="menu__right">
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-5.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Raw Chicken Fillet Garlic
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $25
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-6.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Makai Shorba, Thick Corn
+                                                    Soup
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $14
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-7.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Healthy Salmon Power Bowl
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $09
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-8.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Paneer N Cheese Roll ( Wraps
+                                                    and Rolls)
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $10
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Menu list 2 -->
+                            <article class="menu__list">
+                                <div class="row row-cols-2 row-cols-lg-1">
+                                    <div class="col">
+                                        <div class="menu__left">
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-1.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    list 2
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $11
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-2.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    American Chopsuey, Jain
+                                                    Recipe
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $16
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-3.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Paneer Nuggets, Quick Paneer
+                                                    Deep-fried
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $15
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-4.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Stir Fried Mixed Vegetables
+                                                    in Butter
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="menu__right">
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-5.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Raw Chicken Fillet Garlic
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $25
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-6.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Makai Shorba, Thick Corn
+                                                    Soup
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $14
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-7.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Healthy Salmon Power Bowl
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $09
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-8.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Paneer N Cheese Roll ( Wraps
+                                                    and Rolls)
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $10
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Menu list 3 -->
+                            <article class="menu__list">
+                                <div class="row row-cols-2 row-cols-lg-1">
+                                    <div class="col">
+                                        <div class="menu__left">
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-1.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    list 3
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $11
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-2.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    American Chopsuey, Jain
+                                                    Recipe
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $16
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-3.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Paneer Nuggets, Quick Paneer
+                                                    Deep-fried
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $15
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-4.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Stir Fried Mixed Vegetables
+                                                    in Butter
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="menu__right">
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-5.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Raw Chicken Fillet Garlic
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $25
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-6.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Makai Shorba, Thick Corn
+                                                    Soup
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $14
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-7.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Healthy Salmon Power Bowl
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $09
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-8.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Paneer N Cheese Roll ( Wraps
+                                                    and Rolls)
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $10
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Menu list 4 -->
+                            <article class="menu__list">
+                                <div class="row row-cols-2 row-cols-lg-1">
+                                    <div class="col">
+                                        <div class="menu__left">
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-1.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    list 4
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $11
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-2.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    American Chopsuey, Jain
+                                                    Recipe
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $16
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-3.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Paneer Nuggets, Quick Paneer
+                                                    Deep-fried
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $15
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-4.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Stir Fried Mixed Vegetables
+                                                    in Butter
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="menu__right">
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-5.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Raw Chicken Fillet Garlic
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $25
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-6.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Makai Shorba, Thick Corn
+                                                    Soup
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $14
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-7.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Healthy Salmon Power Bowl
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $09
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-8.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Paneer N Cheese Roll ( Wraps
+                                                    and Rolls)
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $10
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Menu list 5 -->
+                            <article class="menu__list">
+                                <div class="row row-cols-2 row-cols-lg-1">
+                                    <div class="col">
+                                        <div class="menu__left">
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-1.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    list 5
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $11
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-2.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    American Chopsuey, Jain
+                                                    Recipe
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $16
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-3.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Paneer Nuggets, Quick Paneer
+                                                    Deep-fried
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $15
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-4.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Stir Fried Mixed Vegetables
+                                                    in Butter
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $23
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="menu__right">
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-5.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Raw Chicken Fillet Garlic
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $25
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-6.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Makai Shorba, Thick Corn
+                                                    Soup
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $14
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-7.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Healthy Salmon Power Bowl
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $09
+                                                </span>
+                                            </div>
+                                            <div class="menu__item">
+                                                <img
+                                                    src="./assets/img/menu/menu-8.png"
+                                                    alt=""
+                                                    class="menu__item-thumb"
+                                                />
+                                                <h4 class="menu__item-title">
+                                                    Paneer N Cheese Roll ( Wraps
+                                                    and Rolls)
+                                                </h4>
+                                                <span class="menu__item-price">
+                                                    $10
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Visit -->
+            <section class="container home__container">
+                <div class="space">
+                    <div>
+                        <h2 class="food__title">Visit Our Restaurant</h2>
+                        <p class="food__desc">
+                            Quality country-style menu selection, friendly and
+                            efficient service, combined with genuine value has
+                            kept Our Best serving families like yours for over
+                            28.
+                        </p>
+                    </div>
+                    <div class="space__content">
+                        <div class="space__image">
+                            <img
+                                src="./assets/img/space/space-1.png"
+                                alt=""
+                                class="space__thumb space__thumb--small"
+                            />
+                            <img
+                                src="./assets/img/space/space-2.png"
+                                alt=""
+                                class="space__thumb space__thumb--small"
+                            />
+                        </div>
+                        <div class="space__image">
+                            <img
+                                src="./assets/img/space/space-3.png"
+                                alt=""
+                                class="space__thumb space__thumb--large"
+                            />
+                        </div>
+                        <div class="space__image">
+                            <img
+                                src="./assets/img/space/space-4.png"
+                                alt=""
+                                class="space__thumb space__thumb--small"
+                            />
+                            <img
+                                src="./assets/img/space/space-5.png"
+                                alt=""
+                                class="space__thumb space__thumb--small"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reserve -->
+            <section class="container home__container">
+                <div class="reserve">
+                    <div class="row row-cols-2 row-cols-lg-1 gx-0">
+                        <div class="col">
+                            <article class="about__right reserve__right">
+                                <h3
+                                    class="about__right-title reserve__right-title"
+                                >
+                                    Reserve ! Book Now
+                                </h3>
+                                <div
+                                    class="about__right-content reserve__right-info"
+                                >
+                                    <div class="reserve__right-date">
+                                        <p class="reserve__right-text">
+                                            Set Date
+                                        </p>
+                                        <div class="reserve__right-row">
+                                            <span class="reserve__right-number"
+                                                >21</span
+                                            >
+                                            <div
+                                                class="reserve__right-calendar"
+                                            >
+                                                <span
+                                                    class="reserve__right-month"
+                                                >
+                                                    Sep
+                                                </span>
+                                                <img
+                                                    src="./assets/icons/arrow-down.svg"
+                                                    alt=""
+                                                    class="reserve__right-icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reserve__right-date">
+                                        <p class="reserve__right-text">
+                                            Guests
+                                        </p>
+                                        <div class="reserve__right-row">
+                                            <span class="reserve__right-number">
+                                                2
+                                            </span>
+                                            <div
+                                                class="reserve__right-calendar"
+                                            >
+                                                <img
+                                                    src="./assets/icons/arrow-up.svg"
+                                                    alt=""
+                                                    class="reserve__right-icon"
+                                                />
+                                                <img
+                                                    src="./assets/icons/arrow-down.svg"
+                                                    alt=""
+                                                    class="reserve__right-icon"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn reserve__btn">
+                                    Book Now
+                                </button>
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="reserve__left"></article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Offer -->
+            <section class="container home__container">
+                <div class="offer">
+                    <div>
+                        <h2 class="food__title">Our Daily Offers</h2>
+                    </div>
+                    <div class="offer__inner">
+                        <div class="row row-cols-2 row-cols-lg-1 gx-xl-2">
+                            <div class="col">
+                                <article class="offer__left">
+                                    <div class="offer__left-content">
+                                        <h3 class="offer__left-heading">
+                                            Lunch Time
+                                        </h3>
+                                        <p class="offer__left-text">
+                                            <strong class="offer__left-sale">
+                                                30%
+                                            </strong>
+                                            off
+                                        </p>
+                                        <p class="offer__left-desc">
+                                            We love food, lots of different and
+                                            food, just like you.
+                                        </p>
+                                        <button
+                                            class="btn btn--small offer__btn"
+                                        >
+                                            Order Now
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <div class="offer__right">
+                                    <!-- Offer menu 1 -->
+                                    <section class="offer__item">
+                                        <img
+                                            src="./assets/img/offer/offer-1.png"
+                                            alt=""
+                                            class="offer__item-thumb"
+                                        />
+                                        <div class="offer__item-info">
+                                            <h3 class="offer__item-heading">
+                                                Spicy Club
+                                            </h3>
+                                            <p class="offer__item-desc">
+                                                Pork, chcken and vegetable fried
+                                                rolls served with lettuce wraps
+                                            </p>
+                                        </div>
+                                        <span class="offer__item-price">
+                                            $42
+                                        </span>
+                                    </section>
+                                    <div
+                                        class="separate separate--no-margin d-none d-lg-block"
+                                    ></div>
+                                    <!-- Offer menu 2 -->
+                                    <section class="offer__item">
+                                        <img
+                                            src="./assets/img/offer/offer-2.png"
+                                            alt=""
+                                            class="offer__item-thumb"
+                                        />
+                                        <div class="offer__item-info">
+                                            <h3 class="offer__item-heading">
+                                                Almond baked Brie
+                                            </h3>
+                                            <p class="offer__item-desc">
+                                                Pork, chcken and vegetable fried
+                                                rolls served with lettuce wraps
+                                            </p>
+                                        </div>
+                                        <span class="offer__item-price">
+                                            $38
+                                        </span>
+                                    </section>
+                                    <div
+                                        class="separate separate--no-margin d-none d-lg-block"
+                                    ></div>
+                                    <!-- Offer menu 3 -->
+                                    <section class="offer__item">
+                                        <img
+                                            src="./assets/img/offer/offer-3.png"
+                                            alt=""
+                                            class="offer__item-thumb"
+                                        />
+                                        <div class="offer__item-info">
+                                            <h3 class="offer__item-heading">
+                                                Tuscan Flatbread
+                                            </h3>
+                                            <p class="offer__item-desc">
+                                                Pork, chcken and vegetable fried
+                                                rolls served with lettuce wraps
+                                            </p>
+                                        </div>
+                                        <span class="offer__item-price">
+                                            $49
+                                        </span>
+                                    </section>
+                                    <div
+                                        class="separate separate--no-margin d-none d-lg-block"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Best of Us -->
+            <div class="sub__introduction sub__introduction--second">
+                <div
+                    class="sub__introduction-row sub__introduction-row--second"
+                >
+                    <div
+                        class="sub__introduction-item sub__introduction-item--second"
+                    >
+                        <img
+                            src="./assets/icons/taste.svg"
+                            alt=""
+                            class="sub__introduction-icon"
+                        />
+                        <p
+                            class="sub__introduction-type sub__introduction-type--second"
+                        >
+                            Super Taste
+                        </p>
+                    </div>
+                    <div
+                        class="sub__introduction-item sub__introduction-item--second"
+                    >
+                        <img
+                            src="./assets/icons/service.svg"
+                            alt=""
+                            class="sub__introduction-icon"
+                        />
+                        <p
+                            class="sub__introduction-type sub__introduction-type--second"
+                        >
+                            Self Services
+                        </p>
+                    </div>
+                    <div
+                        class="sub__introduction-item sub__introduction-item--second"
+                    >
+                        <img
+                            src="./assets/icons/food.svg"
+                            alt=""
+                            class="sub__introduction-icon"
+                        />
+                        <p
+                            class="sub__introduction-type sub__introduction-type--second"
+                        >
+                            Best Food
+                        </p>
+                    </div>
+                    <div
+                        class="sub__introduction-item sub__introduction-item--second"
+                    >
+                        <img
+                            src="./assets/icons/delivery.svg"
+                            alt=""
+                            class="sub__introduction-icon"
+                        />
+                        <p
+                            class="sub__introduction-type sub__introduction-type--second"
+                        >
+                            Fast Delivery
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chefs -->
+            <section class="container home__container">
+                <div class="food chef">
+                    <div class="chef__inner">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <h2 class="food__title">
+                                    They Will Cook For You
+                                </h2>
+                                <p class="food__desc chef__desc">
+                                    Our Diners can enjoy cooking for themselves,
+                                    or visiting a curated selection of
+                                    restaurants in the area. They will cook for
+                                    you and make sure you have a home away from
+                                    home at all times.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row row-cols-3 row-cols-md-1">
+                            <div class="col">
+                                <!-- Chef item 1 -->
+                                <article class="chef__item">
+                                    <div class="chef__img-wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/chef/chef-1.jpg"
+                                                alt=""
+                                                class="chef__thumb"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="chef__row">
+                                        <h3 class="chef__sub-title">
+                                            <a href="#!">Jubed Ahmed</a>
+                                        </h3>
+                                        <p class="chef__sub-desc">Chef</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <!-- Chef item 2 -->
+                                <article class="chef__item">
+                                    <div class="chef__img-wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/chef/chef-2.jpg"
+                                                alt=""
+                                                class="chef__thumb"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="chef__row">
+                                        <h3 class="chef__sub-title">
+                                            <a href="#!">Delwar Hussen</a>
+                                        </h3>
+                                        <p class="chef__sub-desc">
+                                            Assisten chef
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <!-- Chef item 3 -->
+                                <article class="chef__item">
+                                    <div class="chef__img-wrap">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/img/chef/chef-3.jpg"
+                                                alt=""
+                                                class="chef__thumb"
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="chef__row">
+                                        <h3 class="chef__sub-title">
+                                            <a href="#!">Tajul Islam</a>
+                                        </h3>
+                                        <p class="chef__sub-desc">Chef</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog -->
+            <section class="container home__container">
+                <div class="blog">
+                    <div>
+                        <p class="blog__introduction">Our blog</p>
+                        <h2 class="blog__title">Recent Articles</h2>
+                    </div>
+                    <div class="blog__inner">
+                        <div class="row row-cols-2 row-cols-md-1">
+                            <div class="col">
+                                <img
+                                    src="./assets/img/blog/blog-1.jpg"
+                                    alt=""
+                                    class="blog__thumb"
+                                />
+                            </div>
+                            <div class="col">
+                                <div class="blog__right">
+                                    <p>August 6, 2022</p>
+                                    <h3 class="blog__sub-title">
+                                        The Most Expensive Cup of Coffee in the
+                                        Usa
+                                    </h3>
+                                    <p class="blog__sub-desc">
+                                        Sed ut perspiciatis unde omnis iste
+                                        natus error sit voluptatem accusantium
+                                        doloremque lauatium, totam rem aperiam
+                                        perspiciatis unde omnis.
+                                    </p>
+                                    <div class="blog__sub-row">
+                                        <span>Comments 165</span>
+                                        <span>View 1265</span>
+                                    </div>
+                                    <a href="#!" class="blog__link">Read Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__inner blog__inner--second">
+                        <div
+                            class="row row-cols-2 row-cols-md-1"
+                            style="flex-direction: row-reverse"
+                        >
+                            <div class="col">
+                                <img
+                                    src="./assets/img/blog/blog-2.jpg"
+                                    alt=""
+                                    class="blog__thumb"
+                                />
+                            </div>
+                            <div class="col">
+                                <div class="blog__right">
+                                    <p>August 6, 2022</p>
+                                    <h3 class="blog__sub-title">
+                                        Chicken Soup With Spring Veggies and
+                                        Pasta
+                                    </h3>
+                                    <p class="blog__sub-desc">
+                                        Sed ut perspiciatis unde omnis iste
+                                        natus error sit voluptatem accusantium
+                                        doloremque lauatium, totam rem aperiam
+                                        perspiciatis unde omnis.
+                                    </p>
+                                    <div class="blog__sub-row">
+                                        <span>Comments 165</span>
+                                        <span>View 1265</span>
+                                    </div>
+                                    <a href="#!" class="blog__link">Read Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#!" class="explore__link">
+                        Explore All Blogs
+                        <img
+                            src="./assets/icons/arrow-right.svg"
+                            alt=""
+                            class="explore__link-icon"
+                        />
+                    </a>
+                </div>
+            </section>
+
+            <!-- Letter -->
+            <div class="letter">
+                <div class="letter__inner">
+                    <div class="letter__content">
+                        <div>
+                            <h3 class="letter__title">Newsletter</h3>
+                            <p class="letter__desc">
+                                Subscribe to our newsletter and receive 15%
+                                discount from your order.
+                            </p>
+                        </div>
+                    </div>
+                    <form action="" class="form letter__form">
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="email"
+                                    class="form__input"
+                                    name=""
+                                    placeholder="Enter your email address"
+                                    id=""
+                                />
+                                <img
+                                    src="./assets/icons/arrow-right-email.svg"
+                                    alt=""
+                                    class="form__input-icon"
+                                />
+                                <img
+                                    src="./assets/icons/form-error.svg"
+                                    alt=""
+                                    class="form__input-icon-error"
+                                />
+                            </div>
+                            <p class="form__error">
+                                Email is not correct format
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+    </body>
 </html>

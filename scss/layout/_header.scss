@@ -1,0 +1,139 @@
+@use "../abstracts";
+
+%flexItemsCenter {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    position: relative;
+    z-index: 2;
+}
+
+.top-bar {
+    @extend %flexItemsCenter;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    @include abstracts.screen(lg) {
+        padding: 22px 0;
+    }
+
+    &__logo-img {
+        margin-left: -200px;
+
+        @include abstracts.screen(md) {
+            margin-left: auto;
+        }
+    }
+}
+
+.navbar {
+    @include abstracts.screen(lg) {
+        position: fixed;
+        inset: 0 50% 0 0;
+        z-index: 9;
+
+        margin-left: 0;
+        padding: 20px 0;
+        border-radius: 0px 20px 20px 0px;
+        background: #2e2424;
+
+        translate: -100%;
+        transition: translate 0.5s;
+
+        &.show {
+            translate: 0;
+        }
+
+        &.show ~ &__overlay {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &__close-btn {
+        filter: brightness(0) saturate(100%) invert(98%) sepia(41%) saturate(0%)
+            hue-rotate(10deg) brightness(103%) contrast(103%);
+        @include abstracts.screen(lg) {
+            display: block;
+            padding: 10px 40px;
+        }
+    }
+
+    &__list {
+        @extend %flexItemsCenter;
+        margin-left: -17px;
+
+        @include abstracts.screen(lg) {
+            margin-left: 0;
+            flex-direction: column;
+            align-items: flex-start;
+
+            overflow-y: auto;
+            overscroll-behavior: contain;
+            height: calc(100% - 42px);
+        }
+    }
+
+    &__item {
+        width: 100%;
+    }
+
+    &__link {
+        @extend %flexItemsCenter;
+        height: 55px;
+        padding: 0 17px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 26px;
+
+        &:hover {
+            color: #fb8f2c;
+        }
+
+        @include abstracts.screen(lg) {
+            padding: 0 40px;
+            font-size: 1.6rem;
+            line-height: 150%;
+        }
+    }
+
+    &__overlay {
+        visibility: hidden;
+        opacity: 0;
+
+        @include abstracts.screen(lg) {
+            position: fixed;
+            inset: 0;
+            z-index: 8;
+            transition: opacity, visibility;
+            transition-duration: 0.5s;
+
+            background: rgba($color: #000000, $alpha: 0.4);
+        }
+    }
+}
+
+.top-act {
+    @extend %flexItemsCenter;
+    gap: 28px;
+
+    &__reserve {
+        @include abstracts.screen(md) {
+            margin-left: 30px;
+        }
+
+        &:hover {
+            font-weight: 500;
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+}
+
+.nav-btn {
+    height: 50px;
+    padding: 0 40px;
+    align-items: center;
+}
