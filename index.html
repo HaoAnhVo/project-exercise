@@ -52,9 +52,9 @@
             load("#header", "./template/header.html");
         </script>
         <main class="home">
-            <section class="home__container">
+            <div class="home__container">
                 <!-- Introduction -->
-                <div class="container introduction">
+                <section class="container introduction">
                     <div class="introduction__inner">
                         <div class="row row-cols-2">
                             <div class="col-7 col-lg-12">
@@ -71,7 +71,10 @@
                                         well-being, self-esteem, and other
                                         measures of mental health.
                                     </p>
-                                    <a href="#!" class="introduction__link">
+                                    <a
+                                        href="./menu.html"
+                                        class="introduction__link"
+                                    >
                                         Our menu
                                     </a>
                                 </div>
@@ -87,7 +90,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
                 <!-- Sub introduction -->
                 <div class="sub__introduction">
                     <div class="sub__introduction-row">
@@ -112,10 +115,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="container home__container">
+            </div>
+            <div class="container home__container">
                 <!-- Popular Food -->
-                <div class="food">
+                <section class="food">
                     <div class="food__inner">
                         <div class="row row-cols-1">
                             <div class="col">
@@ -152,7 +155,9 @@
                                         oil and pomegranate.
                                     </p>
                                     <div class="food__row food__order">
-                                        <a href="#!">Order Now</a>
+                                        <a class="food__link" href="#!">
+                                            Order Now
+                                        </a>
                                         <div class="food__stars">
                                             <img
                                                 src="./assets/icons/star.svg"
@@ -206,7 +211,9 @@
                                         oil and pomegranate.
                                     </p>
                                     <div class="food__row food__order">
-                                        <a href="#!">Order Now</a>
+                                        <a href="#!" class="food__link">
+                                            Order Now
+                                        </a>
                                         <div class="food__stars">
                                             <img
                                                 src="./assets/icons/star.svg"
@@ -260,7 +267,9 @@
                                         oil and pomegranate.
                                     </p>
                                     <div class="food__row food__order">
-                                        <a href="#!">Order Now</a>
+                                        <a href="#!" class="food__link">
+                                            Order Now
+                                        </a>
                                         <div class="food__stars">
                                             <img
                                                 src="./assets/icons/star.svg"
@@ -293,7 +302,7 @@
                             </div>
                         </div>
 
-                        <a href="#!" class="explore__link">
+                        <a href="./menu.html" class="explore__link">
                             Explore All Food
                             <img
                                 src="./assets/icons/arrow-right.svg"
@@ -302,11 +311,11 @@
                             />
                         </a>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
             <!-- Opening time -->
-            <section class="container home__container">
-                <div class="about">
+            <div class="container home__container">
+                <section class="about">
                     <div class="row row-cols-2 row-cols-md-1 gx-0">
                         <div class="col">
                             <article class="about__left">
@@ -352,12 +361,12 @@
                             </article>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- Menu -->
-            <section class="container home__container">
-                <div class="menu">
+            <div class="container home__container">
+                <section class="menu">
                     <div>
                         <p class="food__introduction">Our menu</p>
                         <h2 class="food__title">
@@ -1063,12 +1072,12 @@
                             </article>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- Visit -->
-            <section class="container home__container">
-                <div class="space">
+            <div class="container home__container">
+                <section class="space">
                     <div>
                         <h2 class="food__title">Visit Our Restaurant</h2>
                         <p class="food__desc">
@@ -1111,12 +1120,12 @@
                             />
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- Reserve -->
-            <section class="container home__container">
-                <div class="reserve">
+            <div class="container home__container">
+                <section class="reserve">
                     <div class="row row-cols-2 row-cols-lg-1 gx-0">
                         <div class="col">
                             <article class="about__right reserve__right">
@@ -1177,21 +1186,24 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn reserve__btn">
+                                <a
+                                    href="./booking.html"
+                                    class="btn reserve__btn"
+                                >
                                     Book Now
-                                </button>
+                                </a>
                             </article>
                         </div>
                         <div class="col">
                             <article class="reserve__left"></article>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- Offer -->
-            <section class="container home__container">
-                <div class="offer">
+            <div class="container home__container">
+                <section class="offer">
                     <div>
                         <h2 class="food__title">Our Daily Offers</h2>
                     </div>
@@ -1230,18 +1242,21 @@
                                             alt=""
                                             class="offer__item-thumb"
                                         />
+
                                         <div class="offer__item-info">
-                                            <h3 class="offer__item-heading">
-                                                Spicy Club
-                                            </h3>
+                                            <div class="offer__item-info-title">
+                                                <h3 class="offer__item-heading">
+                                                    Spicy Club
+                                                </h3>
+                                                <span class="offer__item-price">
+                                                    $42
+                                                </span>
+                                            </div>
                                             <p class="offer__item-desc">
                                                 Pork, chcken and vegetable fried
                                                 rolls served with lettuce wraps
                                             </p>
                                         </div>
-                                        <span class="offer__item-price">
-                                            $42
-                                        </span>
                                     </section>
                                     <div
                                         class="separate separate--no-margin d-none d-lg-block"
@@ -1253,18 +1268,21 @@
                                             alt=""
                                             class="offer__item-thumb"
                                         />
+
                                         <div class="offer__item-info">
-                                            <h3 class="offer__item-heading">
-                                                Almond baked Brie
-                                            </h3>
+                                            <div class="offer__item-info-title">
+                                                <h3 class="offer__item-heading">
+                                                    Almond baked Brie
+                                                </h3>
+                                                <span class="offer__item-price">
+                                                    $38
+                                                </span>
+                                            </div>
                                             <p class="offer__item-desc">
                                                 Pork, chcken and vegetable fried
                                                 rolls served with lettuce wraps
                                             </p>
                                         </div>
-                                        <span class="offer__item-price">
-                                            $38
-                                        </span>
                                     </section>
                                     <div
                                         class="separate separate--no-margin d-none d-lg-block"
@@ -1276,18 +1294,21 @@
                                             alt=""
                                             class="offer__item-thumb"
                                         />
+
                                         <div class="offer__item-info">
-                                            <h3 class="offer__item-heading">
-                                                Tuscan Flatbread
-                                            </h3>
+                                            <div class="offer__item-info-title">
+                                                <h3 class="offer__item-heading">
+                                                    Tuscan Flatbread
+                                                </h3>
+                                                <span class="offer__item-price">
+                                                    $49
+                                                </span>
+                                            </div>
                                             <p class="offer__item-desc">
                                                 Pork, chcken and vegetable fried
                                                 rolls served with lettuce wraps
                                             </p>
                                         </div>
-                                        <span class="offer__item-price">
-                                            $49
-                                        </span>
                                     </section>
                                     <div
                                         class="separate separate--no-margin d-none d-lg-block"
@@ -1296,8 +1317,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- Best of Us -->
             <div class="sub__introduction sub__introduction--second">
@@ -1364,8 +1385,8 @@
             </div>
 
             <!-- Chefs -->
-            <section class="container home__container">
-                <div class="food chef">
+            <div class="container home__container">
+                <section class="food chef">
                     <div class="chef__inner">
                         <div class="row row-cols-1">
                             <div class="col">
@@ -1446,12 +1467,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- Blog -->
-            <section class="container home__container">
-                <div class="blog">
+            <div class="container home__container">
+                <section class="blog">
                     <div>
                         <p class="blog__introduction">Our blog</p>
                         <h2 class="blog__title">Recent Articles</h2>
@@ -1521,7 +1542,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#!" class="explore__link">
+                    <a href="./blog-page.html" class="explore__link">
                         Explore All Blogs
                         <img
                             src="./assets/icons/arrow-right.svg"
@@ -1529,8 +1550,8 @@
                             class="explore__link-icon"
                         />
                     </a>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- Letter -->
             <div class="letter">

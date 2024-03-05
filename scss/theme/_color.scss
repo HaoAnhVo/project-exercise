@@ -1,6 +1,14 @@
 @use "../abstracts";
 
 html {
+    --text-color: #fff;
+    --icon-color: brightness(0) saturate(100%) invert(98%) sepia(41%)
+        saturate(0%) hue-rotate(10deg) brightness(103%) contrast(103%);
+    --icon-menu-color: invert(65%) sepia(48%) saturate(2092%) hue-rotate(339deg)
+        brightness(101%) contrast(97%);
+
+    --form-placeholder-color: #807171;
+
     @include abstracts.screen(md) {
         --space-bg-color: #000000;
     }

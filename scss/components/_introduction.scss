@@ -40,6 +40,11 @@
     &__link {
         margin-top: 40px;
         color: #fb8f2c;
+
+        &:hover {
+            font-weight: 600;
+            text-decoration: underline;
+        }
     }
 
     &__img {

@@ -6,7 +6,7 @@
 
     &__row {
         display: grid;
-        grid-template-columns: 2.5fr 1fr 2fr 1fr 2fr;
+        grid-template-columns: 3fr 1fr 2fr 1.5fr 2fr;
         gap: 60px;
 
         @include abstracts.screen(lg) {
@@ -35,6 +35,10 @@
         height: 36px;
         object-fit: cover;
         gap: 18px;
+
+        @include abstracts.screen(xl) {
+            gap: 6px;
+        }
     }
 
     &__heading {

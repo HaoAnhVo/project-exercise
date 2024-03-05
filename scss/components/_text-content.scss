@@ -1,0 +1,104 @@
+.text-content {
+    font-size: 1.6rem;
+    line-height: 162.5%;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+        line-height: 125%;
+    }
+
+    h3 {
+        font-size: 3.6rem;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    h6 {
+        font-size: 1.8rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    blockquote,
+    p,
+    img,
+    figure,
+    ul,
+    ol,
+    table {
+        margin: 20px 0;
+    }
+
+    img {
+        margin: 60px 0;
+        display: block;
+        max-width: 100%;
+    }
+
+    img + em {
+        display: block;
+        font-style: italic;
+        text-align: center;
+    }
+
+    a {
+        color: #0071dc;
+        text-decoration: underline;
+    }
+
+    blockquote {
+        margin-bottom: 40px;
+        padding: 20px;
+        background: rgba($color: #5e6161, $alpha: 0.1);
+        border-left: 3px solid #fff;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 145.455%;
+        font-style: italic;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    b {
+        color: var(--white-80, rgba(255, 255, 255, 0.8));
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 92%;
+        vertical-align: top;
+    }
+
+    strong {
+        font-size: 1.8rem;
+        color: #fff;
+    }
+
+    li {
+        margin: 24px 0 0 15px;
+        list-style: disc;
+    }
+}

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu | WowWraps Restaurant</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&family=Playball&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+        <main class="home">
+            <section class="container">
+                <!-- Breakfast -->
+                <div class="meal">
+                    <div class="meal__inner" style="padding-top: 0">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <h2 class="food__title meal__title">
+                                    Breakfast
+                                </h2>
+                                <img
+                                    src="./assets/icons/meal.svg"
+                                    alt=""
+                                    class="meal__icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="meal__list">
+                            <input type="button" value="" id="preview" hidden />
+                            <button
+                                id="preview"
+                                class="meal__btn meal__btn-prew d-md-none"
+                            >
+                                <img
+                                    class="menu-icon meal__btn-icon"
+                                    src="./assets/icons/arrow-right-email.svg"
+                                    alt=""
+                                    style="rotate: 180deg"
+                                />
+                            </button>
+                            <input type="button" value="" id="next" hidden />
+                            <button
+                                id="next"
+                                class="meal__btn meal__btn-next d-md-none"
+                            >
+                                <img
+                                    class="menu-icon meal__btn-icon"
+                                    src="./assets/icons/arrow-right-email.svg"
+                                    alt=""
+                                />
+                            </button>
+
+                            <!-- Food item 1 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/breakfast/breakfast-1.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Egg Frittata Muffins</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $24
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 2 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/breakfast/breakfast-2.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Breakfast Bars</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $29
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 3 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/breakfast/breakfast-3.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Breakfast Sandwiches</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $19
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 4 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/breakfast/breakfast-4.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Burrito Sandwiches</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $20
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="meal__introduction">
+                <div class="meal__introduction-inner">
+                    <div class="meal__introduction-content">
+                        <h3 class="meal__introduction-title">
+                            Food is not just eating energy
+                        </h3>
+                        <p class="meal__introduction-desc">
+                            It’s an experience.
+                        </p>
+                        <button class="btn btn--small meal__introduction-btn">
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="container">
+                <!-- Lunch -->
+                <div class="meal">
+                    <div class="meal__inner">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <h2 class="food__title meal__title">Lunch</h2>
+                                <img
+                                    src="./assets/icons/meal.svg"
+                                    alt=""
+                                    class="meal__icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="meal__list">
+                            <input type="button" value="" id="preview" hidden />
+                            <button
+                                id="preview"
+                                class="meal__btn meal__btn-prew d-md-none"
+                            >
+                                <img
+                                    class="menu-icon meal__btn-icon"
+                                    src="./assets/icons/arrow-right-email.svg"
+                                    alt=""
+                                    style="rotate: 180deg"
+                                />
+                            </button>
+                            <input type="button" value="" id="next" hidden />
+                            <button
+                                id="next"
+                                class="meal__btn meal__btn-next d-md-none"
+                            >
+                                <img
+                                    class="menu-icon meal__btn-icon"
+                                    src="./assets/icons/arrow-right-email.svg"
+                                    alt=""
+                                />
+                            </button>
+
+                            <!-- Food item 1 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/lunch/lunch-1.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Egg Frittata Muffins</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $24
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 2 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/lunch/lunch-2.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Breakfast Bars</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $29
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 3 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/lunch/lunch-3.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Breakfast Sandwiches</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $19
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 4 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/lunch/lunch-4.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Burrito Sandwiches</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $20
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dinner -->
+                <div class="meal">
+                    <div class="meal__inner">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <h2 class="food__title meal__title">Dinner</h2>
+                                <img
+                                    src="./assets/icons/meal.svg"
+                                    alt=""
+                                    class="meal__icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="meal__list">
+                            <input type="button" value="" id="preview" hidden />
+                            <button
+                                id="preview"
+                                class="meal__btn meal__btn-prew d-md-none"
+                            >
+                                <img
+                                    class="menu-icon meal__btn-icon"
+                                    src="./assets/icons/arrow-right-email.svg"
+                                    alt=""
+                                    style="rotate: 180deg"
+                                />
+                            </button>
+                            <input type="button" value="" id="next" hidden />
+                            <button
+                                id="next"
+                                class="meal__btn meal__btn-next d-md-none"
+                            >
+                                <img
+                                    class="menu-icon meal__btn-icon"
+                                    src="./assets/icons/arrow-right-email.svg"
+                                    alt=""
+                                />
+                            </button>
+
+                            <!-- Food item 1 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/dinner/dinner-1.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Egg Frittata Muffins</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $24
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 2 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/dinner/dinner-2.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Breakfast Bars</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $29
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 3 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/dinner/dinner-3.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Breakfast Sandwiches</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $19
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 4 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/dinner/dinner-4.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Burrito Sandwiches</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $20
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <!-- Starters -->
+                <div class="meal">
+                    <div class="meal__inner">
+                        <div class="row row-cols-1">
+                            <div class="col">
+                                <h2 class="food__title meal__title">
+                                    Starters
+                                </h2>
+                                <img
+                                    src="./assets/icons/meal.svg"
+                                    alt=""
+                                    class="meal__icon"
+                                />
+                            </div>
+                        </div>
+                        <div class="meal__list">
+                            <input type="button" value="" id="preview" hidden />
+                            <button
+                                id="preview"
+                                class="meal__btn meal__btn-prew d-md-none"
+                            >
+                                <img
+                                    class="menu-icon meal__btn-icon"
+                                    src="./assets/icons/arrow-right-email.svg"
+                                    alt=""
+                                    style="rotate: 180deg"
+                                />
+                            </button>
+                            <input type="button" value="" id="next" hidden />
+                            <button
+                                id="next"
+                                class="meal__btn meal__btn-next d-md-none"
+                            >
+                                <img
+                                    class="menu-icon meal__btn-icon"
+                                    src="./assets/icons/arrow-right-email.svg"
+                                    alt=""
+                                />
+                            </button>
+
+                            <!-- Food item 1 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/starter/starter-1.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Crispy chicken breasts</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $24
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 2 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/starter/starter-2.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Schezwan Noodles</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $29
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 3 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/starter/starter-3.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">New Lubina Marinada</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $59
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 4 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/starter/starter-4.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Burrito Sandwiches</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="#!">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $20
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+    </body>
+</html>

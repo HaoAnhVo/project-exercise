@@ -232,6 +232,3 @@ window.addEventListener("template-loaded", () => {
             : "Dark mode";
     }
 });
-
-const isDark = localStorage.dark === "true";
-document.querySelector("html").classList.toggle("dark", isDark);

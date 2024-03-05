@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact | WowWraps Restaurant</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&family=Playball&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+        <main class="home">
+            <div class="container">
+                <div class="contact">
+                    <div class="contact__top">
+                        <div class="row row-cols-2 row-cols-md-1">
+                            <div class="col-7">
+                                <h1 class="contact__title">Where to find us</h1>
+                                <p class="contact__desc">
+                                    The Patio Time Cafe is located on Silk
+                                    Street, in the heart of London city, on the
+                                    edge of Soho. Lorem ipsum dolor sit amet,
+                                    consectetuer adipiscing elit. Aenean commodo
+                                    ligula eget dolor. Aenean massa
+                                </p>
+                                <p class="contact__desc">
+                                    Nullam dictum felis eu pede mollis pretium.
+                                    Integer tincidunt. Cras dapibus. Vivamus
+                                    elementum semper nisi. Aenean vulputate
+                                    eleifend tellus. Aenean leo ligula,
+                                    porttitor eu.
+                                </p>
+                                <a href="#!" class="contact__row">
+                                    <img
+                                        src="./assets/icons/location.svg"
+                                        alt=""
+                                        class="contact__row-icon"
+                                    />
+                                    Silk St, Barbican, London EC2Y 8DS, UK
+                                </a>
+                                <a
+                                    href="mailto:gmail1234@gmail.com"
+                                    class="contact__row"
+                                >
+                                    <img
+                                        src="./assets/icons/message-fill.svg"
+                                        alt=""
+                                        class="contact__row-icon"
+                                    />
+                                    gmail1234@gmail.com
+                                </a>
+                                <a
+                                    href="tel:800-123-45-678"
+                                    class="contact__row"
+                                >
+                                    <img
+                                        src="./assets/icons/phone-fill.svg"
+                                        alt=""
+                                        class="contact__row-icon"
+                                        style="fill: white"
+                                    />
+                                    +800-123-45-678
+                                </a>
+                                <button class="btn contact-btn">
+                                    View in google maps
+                                </button>
+                            </div>
+                            <div class="col-5">
+                                <div class="contact-img-wrap d-md-none">
+                                    <img
+                                        src="./assets/img/contact/contact-img.png"
+                                        alt=""
+                                        class="contact__img"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__bottom">
+                        <div class="row row-cols-2 row-cols-md-1">
+                            <div class="col-4">
+                                <h2 class="contact__sub-title">Contact Us</h2>
+                                <p class="contact__label">Opening hours:</p>
+                                <p class="contact__time">
+                                    Mon – Thu: 10.00 am – 01:00 am
+                                </p>
+                                <p class="contact__time">
+                                    Fri – Sun: 10:00 am – 02:00 am
+                                </p>
+                                <a
+                                    href="#!"
+                                    class="booking__form-act contact__form-act"
+                                >
+                                    Online Reservation
+                                </a>
+                            </div>
+                            <div class="col-8">
+                                <form action="" class="form contact__form">
+                                    <div class="form__row contact__form-row">
+                                        <div
+                                            class="form__group contact__form-group"
+                                        >
+                                            <label
+                                                for="full-name"
+                                                class="form__label"
+                                            >
+                                                Your name *
+                                            </label>
+                                            <div class="form__text-input">
+                                                <input
+                                                    type="text"
+                                                    class="form__input"
+                                                    name=""
+                                                    placeholder="Enter your full name"
+                                                    id="full-name"
+                                                    autofocus
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/form-error.svg"
+                                                    alt=""
+                                                    class="form__input-icon-error"
+                                                />
+                                            </div>
+                                            <p class="form__error">
+                                                Email is not correct format
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="form__group contact__form-group"
+                                        >
+                                            <label
+                                                for="email"
+                                                class="form__label"
+                                            >
+                                                Email address *
+                                            </label>
+                                            <div class="form__text-input">
+                                                <input
+                                                    type="email"
+                                                    class="form__input"
+                                                    name=""
+                                                    placeholder="Enter your email address"
+                                                    id="email"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/form-error.svg"
+                                                    alt=""
+                                                    class="form__input-icon-error"
+                                                />
+                                            </div>
+                                            <p class="form__error">
+                                                Email is not correct format
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="form__row contact__form-row">
+                                        <div
+                                            class="form__group contact__form-group"
+                                        >
+                                            <label
+                                                for="subject"
+                                                class="form__label"
+                                            >
+                                                Subject
+                                            </label>
+                                            <div
+                                                class="form__text-input"
+                                                style="min-height: 54px"
+                                            >
+                                                <textarea
+                                                    name=""
+                                                    id="review"
+                                                    class="form__input"
+                                                ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__row contact__form-row">
+                                        <div
+                                            class="form__group contact__form-group"
+                                        >
+                                            <label
+                                                for="review"
+                                                class="form__label"
+                                            >
+                                                Write review *
+                                            </label>
+                                            <div
+                                                class="form__text-input"
+                                                style="min-height: 147px"
+                                            >
+                                                <textarea
+                                                    name=""
+                                                    id="review"
+                                                    class="form__input"
+                                                ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <button class="btn contact-btn contact-btn__submit">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+    </body>
+</html>

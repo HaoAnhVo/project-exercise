@@ -5,7 +5,7 @@
     padding: 70px 0;
 
     @include abstracts.screen(lg) {
-        padding: 46px 0;
+        padding: 40px 0;
     }
 
     &__choice {
@@ -16,6 +16,10 @@
             justify-content: center;
             gap: 60px;
             flex-wrap: wrap;
+
+            @include abstracts.screen(sm) {
+                gap: 37px;
+            }
         }
 
         &-food {
@@ -71,7 +75,7 @@
     &__group {
         display: flex;
         align-items: center;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     &__list {
@@ -82,7 +86,6 @@
 
     &__left,
     &__right {
-        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -101,6 +104,11 @@
         justify-content: space-between;
         font-family: "Libre Bodoni", serif;
 
+        @include abstracts.screen(sm) {
+            flex-direction: column;
+            text-align: center;
+        }
+
         &-thumb {
             width: 76px;
             height: 76px;
@@ -113,10 +121,11 @@
             font-size: 3rem;
             font-weight: 500;
             line-height: 40px;
+            justify-content: left;
 
             @include abstracts.screen(xl) {
                 margin-left: 0;
-                max-width: 260px;
+                width: 260px;
                 font-size: 2.6rem;
                 font-weight: 500;
                 line-height: 34px;
