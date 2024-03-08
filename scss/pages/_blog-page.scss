@@ -25,7 +25,6 @@
     &__title {
         font-size: 6.2rem;
         font-weight: 500;
-        line-height: 115.625%;
         text-align: center;
 
         @include abstracts.screen(lg) {
@@ -216,7 +215,6 @@
         &-title {
             font-size: 6.4rem;
             font-weight: 500;
-            line-height: 115.625%;
 
             @include abstracts.screen(lg) {
                 font-size: 3.8rem !important;
@@ -256,7 +254,6 @@
 .blog-page-detail {
     &__title {
         max-width: 910px;
-        line-height: 115.625%;
     }
 
     &__desc {

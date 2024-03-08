@@ -1,0 +1,48 @@
+@use "../abstracts";
+
+.review-card {
+    &__top {
+        display: flex;
+        gap: 18px;
+        margin-bottom: 60px;
+
+        @include abstracts.screen(sm) {
+            flex-direction: column;
+        }
+    }
+
+    &__avatar {
+        margin-top: -8px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__separate {
+        width: 8px;
+        height: 1px;
+        background: #ffffffcc;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 155.556%;
+    }
+
+    &__date {
+        font-size: 1.4rem;
+    }
+
+    &__desc {
+        margin: 16px 0 24px;
+        line-height: 162.5%;
+    }
+}

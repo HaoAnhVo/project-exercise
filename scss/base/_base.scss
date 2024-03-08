@@ -73,11 +73,12 @@ h6 {
     font-family: "Libre Bodoni", serif;
     color: #fff;
     text-transform: capitalize;
+    font-weight: 500;
+    line-height: 115.625%;
 }
 
 h1 {
     font-size: 6.4rem;
-    font-weight: 500;
 
     @include abstracts.screen(lg) {
         font-size: 6rem !important;

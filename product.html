@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Product Details | WowWraps Restaurant</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&family=Playball&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header.html");
+        </script>
+        <main class="home">
+            <div class="container">
+                <section class="product">
+                    <div class="row row-cols-2 row-cols-lg-1">
+                        <div class="col">
+                            <div class="product-img__wrap">
+                                <img
+                                    src="./assets/img/food/lunch/lunch-1.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h1 class="product__title">
+                                Crispy chicken breasts
+                            </h1>
+                            <div class="product__judge">
+                                <div class="food__stars">
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="food__star"
+                                    />
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="food__star"
+                                    />
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="food__star"
+                                    />
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="food__star"
+                                    />
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="food__star"
+                                    />
+                                </div>
+                                <span class="product__judge-text">
+                                    ( 1 customer review )
+                                </span>
+                            </div>
+                            <b class="product__price">$ 54.00</b>
+                            <p class="product__desc">
+                                Aliquam quaerat voluptatem. Ut enim ad minima
+                                veniam, quis nostrum exercitationem ullam
+                                corporis suscipit laboriosam, nisi ut aliquid ex
+                                ea commodi consequatur uis autem vel eum iure
+                                reprehenderit.
+                            </p>
+                            <div class="product__ctrl">
+                                <div class="product__input">
+                                    <button class="product__input-btn">
+                                        <img
+                                            src="./assets/icons/minus.svg"
+                                            alt=""
+                                        />
+                                    </button>
+                                    <span>1</span>
+                                    <button class="product__input-btn">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt=""
+                                        />
+                                    </button>
+                                </div>
+                                <button class="btn product__btn">
+                                    ADD TO CARD
+                                </button>
+                            </div>
+                            <div class="product__type">
+                                <p class="product__type-text">
+                                    <b>SKU: </b>PT322
+                                </p>
+                                <p class="product__type-text">
+                                    <b>CATEGORY: </b>Lunch
+                                </p>
+                                <p class="product__type-text">
+                                    <b>TAGS: </b>Sweets,Ghevar
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="container">
+                <div class="product-tab js-tabs">
+                    <ul class="product-tab__list">
+                        <li
+                            class="product-tab__item product-tab__item--current"
+                        >
+                            Description
+                        </li>
+                        <li class="product-tab__item">Review ( 1 )</li>
+                    </ul>
+                    <div class="product-tab__contents">
+                        <div
+                            class="product-tab__content product-tab__content--current"
+                        >
+                            <div class="text-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget
+                                    dolor. Aenean massa. Cum sociis natoque
+                                    penatibus et magnis dis parturient montes,
+                                    nascetur ridiculus mus. Donec quam felis,
+                                    ultricies nec, pellentesque eu, pretium
+                                    quis, sem. Nulla consequat massa quis enim.
+                                    Donec pede justo, fringilla vel, aliquet
+                                    nec, vulputate eget, arcu. In enim justo,
+                                    rhoncus ut, imperdiet a, venenatis vitae,
+                                    justo. Nullam dictum felis eu pede mollis
+                                    pretium. Integer tincidunt.
+                                </p>
+                                <p>
+                                    Cras dapibus. Vivamus elementum semper nisi.
+                                    Aenean vulputate eleifend tellus. Aenean leo
+                                    ligula, porttitor eu, consequat vitae,
+                                    eleifend ac, enim. Aliquam lorem ante,
+                                    dapibus in, viverra quis, feugiat a, tellus.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-tab__content">
+                            <div class="review-card">
+                                <div class="review-card__top">
+                                    <img
+                                        src="./assets/img/avatar/avatar-1.png"
+                                        alt=""
+                                        class="review-card__avatar"
+                                    />
+                                    <div class="review-card__info">
+                                        <div class="review-card__row">
+                                            <h4 class="review-card__title">
+                                                Jamie Milson
+                                            </h4>
+                                            <div
+                                                class="review-card__separate"
+                                            ></div>
+                                            <span class="review-card__date">
+                                                March 18, 2022
+                                            </span>
+                                        </div>
+                                        <p class="review-card__desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetuer adipiscing elit. Aenean
+                                            commodo ligula eget dolor. Aenean
+                                            massa. Cum sociis natoque penatibus
+                                            et magnis dis parturient montes,
+                                            nascetur ridiculus mus.
+                                        </p>
+                                        <div class="food__stars">
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                            <img
+                                                src="./assets/icons/star.svg"
+                                                alt=""
+                                                class="food__star"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-card__bottom">
+                                    <h3 class="product__sub-title">
+                                        Add a review
+                                    </h3>
+                                    <p class="review-card__desc">
+                                        Your email address will not be
+                                        published. Required fields are marked *
+                                    </p>
+                                    <form action="" class="form contact__form">
+                                        <div
+                                            class="form__row contact__form-row product__form-row"
+                                        >
+                                            <div
+                                                class="form__group contact__form-group"
+                                            >
+                                                <label
+                                                    for="full-name"
+                                                    class="form__label"
+                                                >
+                                                    Your name *
+                                                </label>
+                                                <div class="form__text-input">
+                                                    <input
+                                                        type="text"
+                                                        class="form__input"
+                                                        name=""
+                                                        placeholder="Enter your full name"
+                                                        id="full-name"
+                                                        autofocus
+                                                        required
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/form-error.svg"
+                                                        alt=""
+                                                        class="form__input-icon-error"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/profile.svg"
+                                                        alt=""
+                                                        class="booking__form-input-icon"
+                                                    />
+                                                </div>
+                                                <p class="form__error">
+                                                    Email is not correct format
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="form__group contact__form-group"
+                                            >
+                                                <label
+                                                    for="email"
+                                                    class="form__label"
+                                                >
+                                                    Email address *
+                                                </label>
+                                                <div class="form__text-input">
+                                                    <input
+                                                        type="email"
+                                                        class="form__input"
+                                                        name=""
+                                                        placeholder="Enter your email address"
+                                                        id="email"
+                                                        required
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/message.svg"
+                                                        alt=""
+                                                        class="booking__form-input-icon"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/form-error.svg"
+                                                        alt=""
+                                                        class="form__input-icon-error"
+                                                    />
+                                                </div>
+                                                <p class="form__error">
+                                                    Email is not correct format
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="form__group contact__form-group"
+                                            >
+                                                <label
+                                                    for="website"
+                                                    class="form__label"
+                                                >
+                                                    Website *
+                                                </label>
+                                                <div class="form__text-input">
+                                                    <input
+                                                        type="text"
+                                                        class="form__input"
+                                                        name=""
+                                                        placeholder="Enter your website address"
+                                                        id="website"
+                                                        required
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/website.svg"
+                                                        alt=""
+                                                        class="booking__form-input-icon"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/form-error.svg"
+                                                        alt=""
+                                                        class="form__input-icon-error"
+                                                    />
+                                                </div>
+                                                <p class="form__error">
+                                                    Website address is not
+                                                    existed
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="form__row contact__form-row product__form-row"
+                                        >
+                                            <div
+                                                class="form__group contact__form-group"
+                                            >
+                                                <label
+                                                    for="review"
+                                                    class="form__label"
+                                                >
+                                                    Write review *
+                                                </label>
+                                                <div
+                                                    class="form__text-input"
+                                                    style="min-height: 147px"
+                                                >
+                                                    <textarea
+                                                        name=""
+                                                        id="review"
+                                                        class="form__input"
+                                                    ></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form__group--inline product__form-group"
+                                        >
+                                            <label class="form__checkbox">
+                                                <input
+                                                    type="checkbox"
+                                                    name=""
+                                                    id="set-default"
+                                                    class="form__checkbox-input"
+                                                    hidden
+                                                />
+                                                <span
+                                                    for="set-default"
+                                                    class="form__checkbox-label"
+                                                >
+                                                    Save my name, email, and
+                                                    website in this browser for
+                                                    the next time I comment.
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <button
+                                            class="btn contact-btn contact-btn__submit product-btn__submit"
+                                        >
+                                            Submit
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal">
+                    <div class="meal__inner product__inner">
+                        <h2 class="product__sub-title">Related Items</h2>
+                        <div class="meal__list">
+                            <input type="button" value="" id="preview" hidden />
+                            <button
+                                id="preview"
+                                class="meal__btn meal__btn-prew d-md-none"
+                            >
+                                <img
+                                    class="menu-icon meal__btn-icon"
+                                    src="./assets/icons/arrow-right-email.svg"
+                                    alt=""
+                                    style="rotate: 180deg"
+                                />
+                            </button>
+                            <input type="button" value="" id="next" hidden />
+                            <button
+                                id="next"
+                                class="meal__btn meal__btn-next d-md-none"
+                            >
+                                <img
+                                    class="menu-icon meal__btn-icon"
+                                    src="./assets/icons/arrow-right-email.svg"
+                                    alt=""
+                                />
+                            </button>
+
+                            <!-- Food item 1 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/lunch/lunch-1.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Egg Frittata Muffins</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="./product.html">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $24
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 2 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/lunch/lunch-2.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Breakfast Bars</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="./product.html">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $29
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 3 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/lunch/lunch-3.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Breakfast Sandwiches</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="./product.html">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $19
+                                    </span>
+                                </div>
+                            </article>
+
+                            <!-- Food item 4 -->
+                            <article class="meal__item">
+                                <div class="meal__img-wrap">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/food/lunch/lunch-4.png"
+                                            alt=""
+                                            class="meal__thumb"
+                                        />
+                                    </a>
+                                </div>
+
+                                <h3 class="food__sub-title meal__sub-title">
+                                    <a href="#!">Burrito Sandwiches</a>
+                                </h3>
+
+                                <p class="food__sub-desc">
+                                    Fresh toasted sourdough bread with olive oil
+                                    and pomegranate.
+                                </p>
+                                <div
+                                    class="separate meal__separate d-md-none"
+                                ></div>
+                                <div class="food__row food__order">
+                                    <a href="./product.html">Order Now</a>
+                                    <span class="food__price meal__price">
+                                        $20
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+    </body>
+</html>
