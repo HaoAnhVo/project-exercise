@@ -152,6 +152,22 @@
                                 <p class="cart__desc">$24.99</p>
                             </div>
                         </div>
+                        <div class="cart__separate cart__separate--third"></div>
+                        <div class="cart__act">
+                            <div class="cart__act-left">
+                                <button class="cart__btn cart__btn-coupon">
+                                    Coupon code
+                                </button>
+                                <button class="cart__btn cart__btn-apply">
+                                    Apply coupon
+                                </button>
+                            </div>
+                            <div class="cart__act-right">
+                                <button class="cart__btn cart__btn-update">
+                                    Update Cart
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="cart__bottom">
@@ -199,231 +215,384 @@
                                             alt=""
                                         />
                                     </p>
-                                    <div class="form__group cart__form-group">
-                                        <label
-                                            for="country"
-                                            class="form__label form__label--small"
-                                        >
-                                            Country
-                                        </label>
+                                    <form>
                                         <div
-                                            class="form__text-input form__text-input--small"
+                                            class="form__group cart__form-group"
                                         >
-                                            <input
-                                                type="text"
-                                                placeholder="Country"
-                                                name=""
-                                                id="country"
-                                                readonly
-                                                class="form__input js-toggle"
-                                                toggle-target="#country-dialog"
-                                            />
-                                            <label for="country">
-                                                <img
-                                                    src="./assets/icons/arrow-down.svg"
-                                                    alt=""
-                                                    class="icon"
-                                                />
-                                            </label>
-                                            <!-- Form dialog -->
-                                            <div
-                                                id="country-dialog"
-                                                class="form__select-dialog hide"
+                                            <label
+                                                for="country"
+                                                class="form__label form__label--small"
                                             >
-                                                <h2
-                                                    class="form__dialog-heading d-none d-md-block"
-                                                >
-                                                    Country
-                                                </h2>
-                                                <button
-                                                    class="form__close-dialog d-none d-md-block d-md-block js-toggle"
+                                                Country
+                                            </label>
+                                            <div
+                                                class="form__text-input form__text-input--small"
+                                            >
+                                                <input
+                                                    type="text"
+                                                    placeholder="Country"
+                                                    name=""
+                                                    id="country"
+                                                    readonly
+                                                    class="form__input js-toggle"
                                                     toggle-target="#country-dialog"
-                                                >
-                                                    x
-                                                </button>
-                                                <ul class="form__option-list">
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li
-                                                        class="form__option form__option--current"
-                                                    >
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                    <li class="form__option">
-                                                        Australia
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form__group cart__form-group">
-                                        <label
-                                            for="city"
-                                            class="form__label form__label--small"
-                                        >
-                                            City
-                                        </label>
-                                        <div
-                                            class="form__text-input form__text-input--small"
-                                        >
-                                            <input
-                                                type="text"
-                                                placeholder="City"
-                                                name=""
-                                                id="city"
-                                                readonly
-                                                class="form__input js-toggle"
-                                                toggle-target="#city-dialog"
-                                            />
-                                            <label for="city">
-                                                <img
-                                                    src="./assets/icons/arrow-down.svg"
-                                                    alt=""
-                                                    class="icon"
+                                                    required
                                                 />
-                                            </label>
-                                            <!-- Form dialog -->
-                                            <div
-                                                id="city-dialog"
-                                                class="form__select-dialog hide"
-                                            >
-                                                <h2
-                                                    class="form__dialog-heading d-none d-md-block"
+                                                <label for="country">
+                                                    <img
+                                                        src="./assets/icons/arrow-down.svg"
+                                                        alt=""
+                                                        class="icon"
+                                                    />
+                                                </label>
+                                                <!-- Form dialog -->
+                                                <div
+                                                    id="country-dialog"
+                                                    class="form__select-dialog hide"
                                                 >
-                                                    City
-                                                </h2>
-                                                <button
-                                                    class="form__close-dialog d-none d-md-block d-md-block js-toggle"
-                                                    toggle-target="#city-dialog"
-                                                >
-                                                    x
-                                                </button>
-                                                <ul class="form__option-list">
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li
-                                                        class="form__option form__option--current"
+                                                    <h2
+                                                        class="form__dialog-heading d-none d-md-block"
                                                     >
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                    <li class="form__option">
-                                                        New South Wales
-                                                    </li>
-                                                </ul>
+                                                        Country
+                                                    </h2>
+                                                    <button
+                                                        class="form__close-dialog d-none d-md-block d-md-block js-toggle"
+                                                        toggle-target="#country-dialog"
+                                                    >
+                                                        x
+                                                    </button>
+                                                    <ul
+                                                        class="form__option-list"
+                                                    >
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option form__option--current"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            Australia
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+
+                                        <div
+                                            class="form__group cart__form-group"
+                                        >
+                                            <label
+                                                for="city"
+                                                class="form__label form__label--small"
+                                            >
+                                                City
+                                            </label>
+                                            <div
+                                                class="form__text-input form__text-input--small"
+                                            >
+                                                <input
+                                                    type="text"
+                                                    placeholder="City"
+                                                    name=""
+                                                    id="city"
+                                                    readonly
+                                                    class="form__input js-toggle"
+                                                    toggle-target="#city-dialog"
+                                                    required
+                                                />
+                                                <label for="city">
+                                                    <img
+                                                        src="./assets/icons/arrow-down.svg"
+                                                        alt=""
+                                                        class="icon"
+                                                    />
+                                                </label>
+                                                <!-- Form dialog -->
+                                                <div
+                                                    id="city-dialog"
+                                                    class="form__select-dialog hide"
+                                                >
+                                                    <h2
+                                                        class="form__dialog-heading d-none d-md-block"
+                                                    >
+                                                        City
+                                                    </h2>
+                                                    <button
+                                                        class="form__close-dialog d-none d-md-block d-md-block js-toggle"
+                                                        toggle-target="#city-dialog"
+                                                    >
+                                                        x
+                                                    </button>
+                                                    <ul
+                                                        class="form__option-list"
+                                                    >
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option form__option--current"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                        <li
+                                                            class="form__option"
+                                                        >
+                                                            New South Wales
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form__group contact__form-group cart__form-group"
+                                        >
+                                            <label
+                                                for="suburb"
+                                                class="form__label"
+                                            >
+                                                Suburb
+                                            </label>
+                                            <div class="form__text-input">
+                                                <input
+                                                    type="text"
+                                                    class="form__input"
+                                                    name=""
+                                                    placeholder="Enter your Suburb address"
+                                                    id="suburb"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/form-error.svg"
+                                                    alt=""
+                                                    class="form__input-icon-error"
+                                                />
+                                            </div>
+                                            <p class="form__error">
+                                                Please fill this form
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="form__group contact__form-group cart__form-group"
+                                        >
+                                            <label
+                                                for="postcode"
+                                                class="form__label"
+                                            >
+                                                Postcode
+                                            </label>
+                                            <div class="form__text-input">
+                                                <input
+                                                    type="number"
+                                                    class="form__input"
+                                                    name=""
+                                                    placeholder="Enter your Postcode"
+                                                    id="postcode"
+                                                    required
+                                                />
+                                                <img
+                                                    src="./assets/icons/form-error.svg"
+                                                    alt=""
+                                                    class="form__input-icon-error"
+                                                />
+                                            </div>
+                                            <p class="form__error">
+                                                Please fill this form
+                                            </p>
+                                        </div>
+                                        <button
+                                            class="cart__btn cart__btn-update"
+                                        >
+                                            Update
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                             <div class="row row cols-2">
@@ -443,6 +612,9 @@
                                 </div>
                             </div>
                         </div>
+                        <button class="cart__btn cart__btn-checkout">
+                            <a href="#!">Proceed to Checkout</a>
+                        </button>
                     </div>
                 </div>
             </div>
